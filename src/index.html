@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Фазылов Алим - мой первый проект</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -27,119 +29,169 @@
         </div>
     </div>
     <div class="about_me">
-        <h2>Обо мне</h2>
-        <img src="" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fugit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fugit.</p>
-        <input type="submit" value="Скачать резюме">
+        <div class="about_me_container">
+            <h2>Обо мне</h2>
+            <hr>
+            <img src="./img/myphoto.png" alt="ава">
+            <p class="first_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis iste eum inventore quam, perspiciatis praesentium repellat corrupti eveniet, labore quibusdam est amet, non ullam numquam ipsam mollitia blanditiis, nesciunt error.</p>
+            <p class="second_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis est, fugiat error modi nostrum, nisi dolor mollitia doloremque alias minus eligendi in, provident obcaecati recusandae.</p>
+            <input type="submit" value="Скачать резюме">
+        </div>
     </div>
     <div class="skills">
-        <h2>Что я умею</h2>
-        <img src="" alt="">
-        <div class="skils_item">
-            <img src="#" alt="">
-            <h3>Веб-разработка</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fugit.</p>
-        </div>
-        <div class="skils_item">
-            <img src="#" alt="">
-            <h3>Разработка</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fugit.</p>
-        </div>
-        <div class="skils_item">
-            <img src="#" alt="">
-            <h3>CEO-Оптимизация</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fugit.</p>
-        </div>
-        <div class="skils_item">
-            <img src="#" alt="">
-            <h3>Маркетинг</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fugit.</p>
+        <div class="slills_container">
+            <h2>Что я умею</h2>
+            <hr>
+            <div class="skils_item">
+                <img src="img/pc.png" alt="">
+                <h3>Веб-разработка</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fugit.</p>
+            </div>
+            <div class="skils_item">
+                <img src="img/log.png" alt="">
+                <h3>Разработка</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fugit.</p>
+            </div>
+            <div class="skils_item">
+                <img src="img/log2.png" alt="">
+                <h3>CEO-Оптимизация</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fugit.</p>
+            </div>
+            <div class="skils_item">
+                <img src="img/log3.png" alt="">
+                <h3>Маркетинг</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fugit.</p>
+            </div>
         </div>
     </div>
     <div class="kaises">
-        <h2>Кейсы</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores voluptatum atque quas iusto! Doloribus, voluptatem.</p>
-        <img src="#" alt="">
-        <div class="kaises_item_1">
-            <h3>Client:</h3>
-            <p>Какая-то компания</p>
-            <h3>Website</h3>
-            <p>https://</p>
+        <div class="kaises_container">
+            <h2>Кейсы</h2>
+            <hr>
+            <p class="firstP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores voluptatum atque quas iusto! Doloribus, voluptatem.</p>
+            <img src="img/photo.png" alt="">
+            <div class="kaises_items">
+                <div class="kaises_item_1">
+                    <h3>Client :</h3>
+                    <p>Какая-то компания</p>
+                    <h3>Website</h3>
+                    <p>https://</p>
+                </div>
+                <div class="kaises_item_2">
+                    <h3>Название проекта</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse consequatur omnis sint ipsam, distinctio sequi velit, asperiores. Explicabo rem iure, mollitia consequuntur vero asperiores dolorem suscipit provident nihil, quam libero aperiam tempora a, natus possimus quod, odit accusantium reiciendis nobis dolore. Nihil rem facere accusamus.</p>
+                </div>
+            </div>
+            <input type="submit" value="Visite live site">
         </div>
-        <div class="kaises_item_2">
-            <h3>Название проекта</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse consequatur omnis sint ipsam, distinctio sequi velit, asperiores. Explicabo rem iure, mollitia consequuntur vero asperiores dolorem suscipit provident nihil, quam libero aperiam tempora a, natus possimus quod, odit accusantium reiciendis nobis dolore. Nihil rem facere accusamus.</p>
-        </div>
-        <input type="submit" value="Visite live site">
     </div>
     <div class="calculator">
-        <h2>Расчет стоимости</h2>
-        <div class="data">
-            <h3>Тип сайта</h3>
-            <input type="submite">
-            <h3>Дизайн</h3>
-            <input type="submite">
-            <h3>Адаптивность</h3>
-            <input type="submite">
-            <h4>Сроки 0</h4>
-            <h4>Стоимость 0</h4>
+        <div class="calculator_container">
+            <h2>Расчет стоимости</h2>
+            <div class="data">
+                <h3>Тип сайта</h3>
+                    <select class="mySelect" name="type" id="typeSite">
+                        <option value="1" selected disabled>Выберите пункт</option>
+                        <option value="2">Сайт-визитка</option>
+                        <option value="3">Корпоротивный сайт</option>
+                        <option value="4">Интернет магазин</option>
+                    </select>
+                    <h3>Дизайн</h3>
+                    <select class="mySelect" name="type" id="typeSite">
+                        <option value="1" selected disabled>Выберите пункт</option>
+                        <option value="2">Шаблонный</option>
+                        <option value="3">Уникальный</option>
+                        <option value="4">WOW-дизайн</option>
+                    </select>
+                    <h3>Адаптивность</h3>
+                    <select class="mySelect" name="type" id="typeSite">
+                        <option value="1" selected disabled>Выберите пункт</option>
+                        <option value="2">Тольок ПК</option>
+                        <option value="3">Только мобильный сайт</option>
+                        <option value="4">ПК + Мобильный</option>
+                    </select>
+                <div class="select_hr"></div>
+                <h4>Сроки <span class="span_zero">0</span></h4>
+                <h4>Стоимость <span class="span_zero">0</span></h4>
+            </div>
         </div>
     </div>
     <div class="statistics">
-        <h2>Немного статистики</h2>
-        <img src="#" alt="">
-        <div class="stats_item">
-            <img src="#" alt="">
-            <h3>120</h3>
-            <p>Lorem ipsum.</p>
-        </div>
-        <div class="stats_item">
-            <img src="#" alt="">
-            <h3>4,600</h3>
-            <p>Lorem ipsum.</p>
-        </div>
-        <div class="stats_item">
-            <img src="#" alt="">
-            <h3>340</h3>
-            <p>Lorem ipsum.</p>
-        </div>
-        <div class="stats_item">
-            <img src="#" alt="">
-            <h3>23</h3>
-            <p>Lorem ipsum.</p>
+        <div class="statistics_container">
+            <h2>Немного статистики</h2>
+            <hr>
+            <div class="stats_item">
+                <img src="./img/logo1.png" alt="">
+                <h3>120</h3>
+                <p>Счастливых клиентов</p>
+            </div>
+            <div class="stats_item">
+                <img src="./img/logo2.png" alt="">
+                <h3>4,600</h3>
+                <p>Часов работы</p>
+            </div>
+            <div class="stats_item">
+                <img src="./img/logo3.png" alt="">
+                <h3>340</h3>
+                <p>Проектов завершено</p>
+            </div>
+            <div class="stats_item">
+                <img src="./img/logo4.png" alt="">
+                <h3>23</h3>
+                <p>Наград получено</p>
+            </div>
         </div>
     </div>
     <div class="reviews">
-        <h2>Отзывы</h2>
-        <img src="#" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident praesentium nostrum, dolore laborum reprehenderit magnam, veritatis itaque dolorum earum alias omnis similique. Quisquam, eos fugit.</p>
-        <p>Какое-то описание</p>
+        <div class="reviews_container">
+            <h2>Отзывы</h2>
+            <hr>
+            <img src="./img/mihail.png" alt="">
+            <p class="p_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident praesentium nostrum, dolore laborum reprehenderit magnam, veritatis itaque dolorum earum alias omnis similique. Quisquam, eos fugit.</p>
+            <p class="p_2"><b>Михаил,</b> Ген директор ПАО "Газпром".</p>
+        </div>
     </div>
     <div class="contacts">
-        <img src="#" alt="">
-        <h2>Мои контакты</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia harum ut, hic iste incidunt minus.</p>
-        <div class="contacts_irems">
+        <div class="contacts_container">
+            <h2>Мои контакты</h2>
+            <hr>
+            <p class="cont_p_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia harum ut, hic iste incidunt minus.</p>
             <div class="contacts_item">
-                <img src="#" alt="">
+                <img src="./img/geo.png" alt="">
                 <p>Санкт-Петербург</p>
                 <p>Невский проспект 11</p>
             </div>
             <div class="contacts_item">
-                <img src="#" alt="">
+                <img src="./img/mail.png" alt="">
                 <p>pochta@gmail.com</p>
             </div>
             <div class="contacts_item">
-                <img src="#" alt="">
+                <img src="./img/tel.png" alt="">
                 <p>+7(988)903-32-32</p>
             </div>
+            <div class="clear"></div>
+            <h3>Оставьте мне сообщение</h3>
+            <input class="firs_contacts_1" type="placeholder" value="Имя">
+            <input class="firs_contacts_2" type="placeholder" value="Email">
+            <div class="textarea">
+                <textarea class="second_contacts" type="placeholder" value="Оставьте сообщение">Сообщение</textarea>
+            </div>
+            <input class="submit" type="submit">
+            <div class="icons">
+                <a href="https://vk.com/im?peers=266889424_c149&sel=-203472929"><img src="./img/fb.png" alt=""></a>
+                <a href=""><img src="./img/tvit.png" alt=""></a>
+                <a href=""><img src="./img/bool.png" alt=""></a>
+                <a href=""><img src="./img/kat.png" alt=""></a>
+                <a href=""><img src="./img/inst.png" alt=""></a>
+                <a href=""><img src="./img/in.png" alt=""></a>
+            </div>
         </div>
-        <h3>Оставьте мне сообщение</h3>
-        <input type="placeholder" value="Имя">
-        <input type="placeholder" value="Email">
-        <input type="placeholder" value="Оставьте сообщение">
     </div>
-    <input type="submit">
+    <div class="map">
+        <h2>I'm here</h2>
+    </div>
+    <footer>
+        Copyright © 2021 Андрей Браун. Design by Web
+    </footer>
 </body>
 </html>
